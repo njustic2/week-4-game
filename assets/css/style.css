@@ -14,7 +14,7 @@ body {
   background: url("../images/circlecrystal.jpg");
   width: 1024px;
   padding-top: 5px;
-  height: 950px;
+  height: 1100px;
 }
 
 h1{
@@ -27,13 +27,13 @@ h1{
   background-color: rgb(197,116,39);
   /*margin-bottom: 20px;*/
 }
-
+/*
  .gameTitle {
   font-size: 21px;
   font-weight: 700;
   color: white;
   text-shadow: 4px 4px 2px #aa4d05;
- }
+ }*/
 
  p{
   font-family:"Avant Garde", "sans-serif";
@@ -78,11 +78,11 @@ h1{
   background-color: rgb(44,162,150);
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 30px;
  }
   .box7 {
   width: 300px;
-  height: 100px;
+  height: 80px;
   background-color: rgb(44,162,150);
   margin-top: 5px;
   margin-bottom: 1px;

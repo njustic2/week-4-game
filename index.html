@@ -10,17 +10,14 @@
 
 			<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-			<!-- Bootstrap Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-			<!-- Bootstrap Optional theme -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			
+			<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  				crossorigin="anonymous"></script>
  
-
- 			
   			<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 			
-			<script type="text/javascript" src="assets/javascript/game.js"></script>
+			<!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
 	
 		</head>
 
@@ -30,10 +27,7 @@
 		<div class="container-fluid">
 			<div id="main-container">	
 					<div class="row">
-						<div class="col-md-5">
-								<h1 class="gameTitle">Crystal Collector!</h1> 
-						</div>
-						<div class="col-md-7"> </div>
+						<div class="jumbotron"><h1 class="text-center" >Crystal Collector!</h1></div>
 					</div>
 					<div class="row">
 					   <div class="col-md-10">
@@ -52,6 +46,8 @@
 					<div class="row">
 						<div class="col-md-4">
 								<div class="box3">
+								
+									<div class="text-center" id="computerGenerated"></div>
 									<p><b>39</b></p>
 								</div>
 						</div>
@@ -71,29 +67,25 @@
 					  <!-- <section> -->
 						<div class="col-md-3">
 							<div class="box4">
-							  <img src="assets/images/six_sided_crystals.jpg" width="220" height="60">
+							<button id="crystalOne" class="btn btn-primary"><img src="assets/images/six_sided_crystals.jpg" width="200" height="60"></button>
 							</div>
 						</div>
 
 						<div class="col-md-3">
 							<div class="box4">
-								<img src="assets/images/diamond_shape_crystal.jpg" width="220" height="60">
-
-							</div>
-
+							<button id="crystalTwo" class="btn btn-primary"><img src="assets/images/diamond_shape_crystal.jpg" width="200" height="60"></button>
+						</div>
 						</div>
 
 						<div class="col-md-3">
 							<div class="box4">
-							<img src="assets/images/eight_sided_crystals.jpg" width="220" height="60">
-
+							<button id="crystalThree" class="btn btn-primary"><img src="assets/images/eight_sided_crystals.jpg" width="200" height="60"></button>
 							</div>
 						</div>
 
 						<div class="col-md-3">
 							<div class="box4">
-							<img src="assets/images/suare_shape_crystals.jpg" width="220" height="60">
-
+							<button id="crystalFour" class="btn btn-primary"><img src="assets/images/suare_shape_crystals.jpg" width="200" height="60"></button>
 							</div>
 						</div>
 					  <!-- </section> -->
@@ -121,5 +113,5 @@
 			</div>
 		</div>
 		</div>
-		</body>
+	</body>
 	</html>
