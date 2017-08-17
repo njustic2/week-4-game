@@ -57,7 +57,7 @@ var getRandom = function(min, max){
 // Starts the game and restarts the game
 var startGame = function(){
   // reset the curent score
-      var currentScore = 0;
+    currentScore = 0;
 
   // set a new target score (between 19 and 120)
   targetScore = getRandom(19, 120);
@@ -89,9 +89,45 @@ var addValues = function(crystal){
 
   // Change the HTML to reflect changes in currentScore
   $("#yourScore").html(currentScore);
+
+  // Call checkWin function
+  checkWin();
   
   // Testing Console
   console.log("Your Score: " + currentScore);
+}
+
+// check if use won or loss and Reset the Game
+var checkWin = function(){
+
+    // Check if current Score is larger than target Score
+    if(currentScore > targetScore){
+      alert("Sorry. You Lost!");
+      console.log("You Lost");
+
+      // Add to loss Counter
+      lossCount++;
+      // change loss count HTML
+      $("lossCount").html(lossCount);
+      //Restart the Game
+      startGame();
+
+    }
+
+    else if (currentScore == targetScore) {
+       alert("Sorry. You Win!");
+      console.log("You Win");
+
+      //Add to Win Counter
+      winCount++;
+
+      // change win count HTML
+      $("winCount").html(winCount);
+
+      //Restart the Game
+      startGame();
+    }
+
 }
 
 
