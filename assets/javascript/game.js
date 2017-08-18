@@ -37,18 +37,17 @@ var crystal = {
 
 }
 
-// //Scores
+//Scores
+  var currentScore = 0;
+  var targetScore = 0;
 
-var currentScore = 0;
-var targetScore = 0;
-
-// Wins and Losses
-var winCount = 0;
-var lossCount = 0;
-
+//Wins and Losses
+  var winCount = 0;
+  var lossCount = 0;
 
 
-// // Functions
+
+// Functions
 // Helper Function for getting random numbers
 var getRandom = function(min, max){
   return Math.floor(Math.random()*(max-min+1)) + min;
@@ -71,6 +70,9 @@ var startGame = function(){
   //change the html to reflect all of these changes 
   $("#yourScore").html(currentScore);
   $("#targetScore").html(targetScore);
+  $("#winCount").html(winCount);
+  $("#lossCount").html(lossCount);
+
 
 
   //console log for checking
@@ -84,17 +86,17 @@ var startGame = function(){
 // Respond to clicks
 var addValues = function(crystal){
   
-  // Change current score
-  currentScore = currentScore + crystal.value;
+    // Change current score
+    currentScore = currentScore + crystal.value;
 
-  // Change the HTML to reflect changes in currentScore
-  $("#yourScore").html(currentScore);
+    // Change the HTML to reflect changes in currentScore
+    $("#yourScore").html(currentScore);
 
-  // Call checkWin function
-  checkWin();
-  
-  // Testing Console
-  console.log("Your Score: " + currentScore);
+    // Call checkWin function
+    checkWin();
+    
+    // Testing Console
+    console.log("Your Score: " + currentScore);
 }
 
 // check if use won or loss and Reset the Game
@@ -107,8 +109,10 @@ var checkWin = function(){
 
       // Add to loss Counter
       lossCount++;
+      
       // change loss count HTML
       $("lossCount").html(lossCount);
+      
       //Restart the Game
       startGame();
 
